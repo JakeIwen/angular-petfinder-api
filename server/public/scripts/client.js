@@ -32,7 +32,7 @@ app.controller('DoggoController', ['$http', function($http) {
   self.animal = {};
 
   self.getRandomPet = function(){
-    var query = 'http://api.petfinder.com/'; // baseURL for API
+    var query = 'https://api.petfinder.com/'; // baseURL for API
     query += 'pet.getRandom'; // selecting the method we would like to return
     query += '?key=' + key; // Giving petfinder our key
     query += '&format=json'; // Telling petfinder we want our response to be JSON
@@ -60,7 +60,7 @@ app.controller('BarnController', ['$http', function($http) {
   self.animal = {};
 
   self.getRandomPet = function(){
-    var query = 'http://api.petfinder.com/'; // baseURL for API
+    var query = 'https://api.petfinder.com/'; // baseURL for API
     query += 'pet.getRandom'; // selecting the method we would like to return
     query += '?key=' + key; // Giving petfinder our key
     query += '&format=json'; // Telling petfinder we want our response to be JSON
@@ -88,7 +88,7 @@ app.controller('FurryController', ['$http', function($http) {
   self.animal = {};
 
   self.getRandomPet = function(){
-    var query = 'http://api.petfinder.com/'; // baseURL for API
+    var query = 'https://api.petfinder.com/'; // baseURL for API
     query += 'pet.getRandom'; // selecting the method we would like to return
     query += '?key=' + key; // Giving petfinder our key
     query += '&format=json'; // Telling petfinder we want our response to be JSON
