@@ -5,6 +5,9 @@ body {
 .row {
   margin: 15px;
 }
+.next, a {
+  text-align: center;
+}
 .jumbotron {
   text-align: center;
 }
