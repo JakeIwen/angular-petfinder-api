@@ -45,6 +45,12 @@ img{
   font-size: 1.3em;
 }
 
+table td {
+    border-color: rgb(50, 50, 50) !important;
+}
+table th {
+    border-color: rgb(50, 50, 50) !important;
+}
 section {
   margin: 25px;
 }
