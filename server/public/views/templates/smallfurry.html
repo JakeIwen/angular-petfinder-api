@@ -1,0 +1,37 @@
+<div class="container " ng-module="furry">
+  <div class="row">
+    <h1>{{furry.animal.name.$t}}</h1>
+
+  </div>
+  <div class="row info">
+    <div class="col-md-6 top" >
+      <table class="table">
+        <thead>
+          <tr>
+            <th colspan="2"><h2>Information</h2></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr><td>Breed:</td><td>{{furry.animal.breeds.breed.$t}} </td></tr>
+          <tr><td>Age:</td><td>{{furry.animal.age.$t}} </td></tr>
+          <tr><td>Size:</td><td>{{furry.animal.size.$t}} </td></tr>
+          <tr><td>Gender:</td><td>{{furry.animal.sex.$t}} </td></tr>
+          <tr><td>Location:</td><td>{{furry.animal.contact.city.$t}}, {{furry.animal.contact.state.$t}} </td></tr>
+          <tr><td>Phone:</td><td>{{furry.animal.contact.phone.$t}} </td></tr>
+          <tr><td>Email:</td><td>{{furry.animal.contact.email.$t}} </td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-6">
+        <img ng-src="{{furry.animal.media.photos.photo[2].$t}}" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 description">
+      {{furry.animal.description.$t}}
+    </div>
+  </div>
+</div>

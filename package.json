@@ -1,7 +1,7 @@
 {
   "name": "angular-petfinder-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "A site for retrieving a random pet from the petfinder API",
   "main": "index.js",
   "scripts": {
     "start": "node server/app.js",
@@ -10,7 +10,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.5.9",
+    "angular-route": "^1.5.9",
     "body-parser": "^1.15.2",
-    "express": "^4.14.0"
-  }
+    "dot-env": "0.0.1",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "pg": "^6.1.0",
+    "request": "^2.79.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukeSchlangen/angular-petfinder-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LukeSchlangen/angular-petfinder-api/issues"
+  },
+  "homepage": "https://github.com/LukeSchlangen/angular-petfinder-api#readme"
 }
