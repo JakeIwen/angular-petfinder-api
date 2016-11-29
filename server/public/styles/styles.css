@@ -1,9 +1,9 @@
 body {
   font-family: Times;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 .row {
-  margin: 15px;
+  margin: 8px;
 }
 .next, a {
   text-align: center;
@@ -22,7 +22,9 @@ body {
   margin-bottom: 20px;
 }
 img{
-  height: 400px;
+  height: 350px;
+  border-radius: 15px;
+
 }
 .row h1 {
   font-family: 'Taviraj', serif;
@@ -39,7 +41,7 @@ img{
   align-self: flex-end;
 }
 .table {
-  font-size: 24px;
+  font-size: 1.3em;
 
 }
 section {
