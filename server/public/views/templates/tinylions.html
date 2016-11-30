@@ -1,0 +1,39 @@
+<div class="container " ng-module="tinylions">
+  <div class="row next">
+    <p class="next" ng-click="tinylions.getRandomPet()"><a href="#tinylions">(Next Critter)</a></p>
+    <br>
+    <h1>{{tinylions.animal.name.$t}}</h1>
+
+  </div>
+  <div class="row info">
+    <div class="col-md-6 top" >
+      <table class="table">
+        <thead>
+          <tr>
+            <th colspan="2"><h2>Information</h2></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr><td>Breed:</td><td>{{tinylions.animal.breeds.breed.$t}} </td></tr>
+          <tr><td>Age:</td><td>{{tinylions.animal.age.$t}} </td></tr>
+          <tr><td>Size:</td><td>{{tinylions.animal.size.$t}} </td></tr>
+          <tr><td>Gender:</td><td>{{tinylions.animal.sex.$t}} </td></tr>
+          <tr><td>Location:</td><td>{{tinylions.animal.contact.city.$t}}, {{tinylions.animal.contact.state.$t}} </td></tr>
+          <tr><td>Phone:</td><td>{{tinylions.animal.contact.phone.$t}} </td></tr>
+          <tr><td>Email:</td><td>{{tinylions.animal.contact.email.$t}} </td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-6">
+        <img ng-src="{{tinylions.animal.media.photos.photo[2].$t}}" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 description">
+      {{tinylions.animal.description.$t}}
+    </div>
+  </div>
+</div>

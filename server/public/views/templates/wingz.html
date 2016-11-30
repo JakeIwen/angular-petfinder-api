@@ -1,0 +1,39 @@
+<div class="container " ng-module="wingz">
+  <div class="row next">
+    <p class="next" ng-click="wingz.getRandomPet()"><a href="#wingz">(Next Critter)</a></p>
+    <br>
+    <h1>{{wingz.animal.name.$t}}</h1>
+
+  </div>
+  <div class="row info">
+    <div class="col-md-6 top" >
+      <table class="table">
+        <thead>
+          <tr>
+            <th colspan="2"><h2>Information</h2></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr><td>Breed:</td><td>{{wingz.animal.breeds.breed.$t}} </td></tr>
+          <tr><td>Age:</td><td>{{wingz.animal.age.$t}} </td></tr>
+          <tr><td>Size:</td><td>{{wingz.animal.size.$t}} </td></tr>
+          <tr><td>Gender:</td><td>{{wingz.animal.sex.$t}} </td></tr>
+          <tr><td>Location:</td><td>{{wingz.animal.contact.city.$t}}, {{wingz.animal.contact.state.$t}} </td></tr>
+          <tr><td>Phone:</td><td>{{wingz.animal.contact.phone.$t}} </td></tr>
+          <tr><td>Email:</td><td>{{wingz.animal.contact.email.$t}} </td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-6">
+        <img ng-src="{{wingz.animal.media.photos.photo[2].$t}}" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 description">
+      {{wingz.animal.description.$t}}
+    </div>
+  </div>
+</div>
